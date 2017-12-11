@@ -1,59 +1,30 @@
 /**
-        *Программа должна выполнять одно из заданий на выбор.
-        *Если в консоли ввести 1 - запуститься выполнение калькулятора,
-        *если 2 - поиск максимального слова в массиве.
+        РџСЂРѕРіСЂР°РјРјР° РґРѕР»Р¶РЅР° РІС‹РїРѕР»РЅСЏС‚СЊ РѕРґРЅРѕ РёР· Р·Р°РґР°РЅРёР№ РЅР° РІС‹Р±РѕСЂ.
+        *Р•СЃР»Рё РІ РєРѕРЅСЃРѕР»Рё РІРІРµСЃС‚Рё 1 - Р·Р°РїСѓСЃС‚РёС‚СЊСЃСЏ РІС‹РїРѕР»РЅРµРЅРёРµ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂР°,
+        *РµСЃР»Рё 2 - РїРѕРёСЃРє РјР°РєСЃРёРјР°Р»СЊРЅРѕРіРѕ СЃР»РѕРІР° РІ РјР°СЃСЃРёРІРµ.
 */
 
 public class ArrayOfString {
-
     static Scanner sc = new Scanner(System.in);
-
-    private static String[] createMass(int n){
-
-
+    private static String[] createMass(int n){        
               String[] Mass = new String[n];
-
-
               for (int i=0; i<n; i++){
-
-
-                  Mass[i] = sc.next();
-
-
-                   }
-
-
-               return Mass;
-
-
+                 Mass[i] = sc.next();
+                  }
+              return Mass;
            }
-
-
+       
     private static int searchFirstBigElement(String[] mas){
-
-
                int indexOfMaxLength=0;
-
-
-               for (int i=0; i<mas.length; i++){
-
-
+              for (int i=0; i<mas.length; i++){
                        if (mas[indexOfMaxLength].length() < mas[i].length()) indexOfMaxLength = i;
 
-
                    }
 
-
                return indexOfMaxLength;
-
-
            }
-
-
     public static void arrayOfString() {
-
-
-               System.out.println("Задать размер массива");
+               System.out.println("Р Р°Р·РјРµСЂ РјР°СЃСЃРёРІР°");
 
 
                int lengthOfMass = sc.nextInt();
@@ -62,7 +33,7 @@ public class ArrayOfString {
                String [] mass = createMass(lengthOfMass);
 
 
-               System.out.println("Самое длинное слово в массиве (первое, если их несколько с одинаковой длиной) "
+               System.out.println("Р”Р»РёРЅРЅРѕРµ СЃР»РѕРІРѕ") "
 
 
                        + mass[searchFirstBigElement(mass)]);
