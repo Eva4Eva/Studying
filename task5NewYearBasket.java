@@ -2,10 +2,10 @@ package Presents;
 
 public class NewYearBasket {
     public static void showPresentsBasket () {
-        Candy candy1 = new Candy("Халва", 10, 100.7);
+        Candy candy1 = new Candy("Сникерс", 10, 100.7);
         candy1.setPerson("брату");
-        Candy candy2 = new Candy("Батончик", 10, 90.7, "сестре");
-        Chocolate ch1 = new Chocolate("Аленка", 20, 150.7, "молочный");
+        Candy candy2 = new Candy("Марс", 10, 90.7, "сестре");
+        Chocolate ch1 = new Chocolate("Баунти", 20, 150.7, "Милка");
         Chocolate ch2 = new Chocolate();
         ch2.setType("тёмный");
         ch2.setName("Рошен");
