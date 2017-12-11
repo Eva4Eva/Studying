@@ -1,4 +1,6 @@
-/**1 week*/
+/**Реализовать сложение дробных чисел, которые пользователь вводит в консоль. 
+Использовать комментарии и JavaDoc при описании метода. Использовать форматирование при выводе результата в консоль. 
+Полученный результат округлять до 4-х знаков после запятой.*/
 
 
 import java.util.Scanner;
@@ -16,29 +18,34 @@ public class Calculator {
         choose = enter_2.nextLine();
         switch (choose) {
 
-            case "*":
+            case "*":   
+                //умножение
                 num_3 = num_1 * num_2;
                 System.out.println(num_3);
                 break;
 
-            case "/":
+            case "/":   
+                //деление
                 num_3 = num_1 / num_2;
                 System.out.println(num_3);
                 break;
 
-            case "+":
+            case "+":   
+                //сложение
                 num_3 = num_1 + num_2;
                 System.out.println(num_3);
                 break;
 
 
-            case "-":
+            case "-":  
+                //вычитание
                 num_3 = num_1 - num_2;
                 System.out.println(num_3);
                 break;
 
 
-            default:
+            default:   
+                //любой символ, отличный от +,-,/,*
                 System.out.println("Ошибка!");
         }
     }
