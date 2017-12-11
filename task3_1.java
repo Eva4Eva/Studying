@@ -14,7 +14,7 @@ public class ChoiceOperation {
                 "если 2 - поиск максимального слова в массиве, \n");
         int choice = scanner.nextInt();
         switch (choice){
-            case 1: Calc.calculating(); break;
+            case 1: Calculator.сalculator(); break;
             case 2: ArrayOfString.arrayOfString(); break;
         }
     }
