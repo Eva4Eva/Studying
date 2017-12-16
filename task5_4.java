@@ -35,7 +35,7 @@ public abstract class Present {
 
     public void setWeight(int weight) {
         this.weight = weight;
-    }
+    } 
 
     public void setPrice(Double price) {
         this.price = price;
