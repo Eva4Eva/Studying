@@ -37,7 +37,7 @@ switch (choose){
     case "/": object_3.num_3=object_1.num_1/object_2.num_2;
     System.out.println(object_3.num_3);
     break;
-    default: System.out.println("Ошибка!Вы ввели неправильный символ.");
+    default: System.out.println("Ошибка!Вы ввели неверный символ.");
 }
     }
 
