@@ -1,3 +1,7 @@
+//Р РµР°Р»РёР·РѕРІР°С‚СЊ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂ РІ СЃС‚РёР»Рµ РћРћРџ.
+//РђСЂС…РёС‚РµРєС‚СѓСЂСѓ РїСЂРёР»РѕР¶РµРЅРёСЏ РїСЂРѕРґСѓРјР°С‚СЊ СЃР°РјРѕСЃС‚РѕСЏС‚РµР»СЊРЅРѕ.
+
+
 import java.util.Scanner;
 public class Calculator {
     double num_1;
@@ -10,14 +14,14 @@ public class Calculator {
         Calculator object_3 = new Calculator();
 
 Scanner input = new Scanner(System.in);
-        System.out.println("Введите num_1");
+        System.out.println("Р’РІРµРґРёС‚Рµ num_1");
  object_1.num_1=input.nextDouble();
 Scanner input_2 = new Scanner(System.in);
-        System.out.println("Введите num_2");
+        System.out.println("Р’РІРµРґРёС‚Рµ num_2");
 object_2.num_2=input.nextDouble();
 object_3.num_3=0;
 String choose = new String();
-System.out.println("Введете символ математического действия");
+System.out.println("Р’РІРµРґРµС‚Рµ СЃРёРјРІРѕР» РјР°С‚РµРјР°С‚РёС‡РµСЃРєРѕРіРѕ РґРµР№СЃС‚РІРёСЏ");
 choose=input_2.nextLine();
 switch (choose){
 
@@ -33,7 +37,7 @@ switch (choose){
     case "/": object_3.num_3=object_1.num_1/object_2.num_2;
     System.out.println(object_3.num_3);
     break;
-    default: System.out.println("Ошибка!Вы ввели неправильный символ.");
+    default: System.out.println("РћС€РёР±РєР°!Р’С‹ РІРІРµР»Рё РЅРµРїСЂР°РІРёР»СЊРЅС‹Р№ СЃРёРјРІРѕР».");
 }
     }
 
