@@ -36,6 +36,7 @@ public class Task7 {
             
             //Check max word count
             if(count>max_word_count)
+               
             {
               max_word_count = count;
               max_word = word;
